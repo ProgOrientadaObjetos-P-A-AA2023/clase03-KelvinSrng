@@ -7,7 +7,9 @@ package manejoclases01;
 
 
 public class Ejecutable {
+    
     public static void main(String[] args) {
+        
         // Se crea un objeto
         Hospital hospital = new Hospital();
         
@@ -21,5 +23,16 @@ public class Ejecutable {
                 hospital.numeroCamas, hospital.presupuesto);
         
         // System.out.println(hospital.nombre + "-" + hospital.numeroCamas);
+        
+        Hospital hospital2 = new Hospital();
+        
+        // Se asigna valores particulares al objeto
+        hospital2.nombre = "Santa Elena";
+        hospital2.numeroCamas = 75;
+        hospital2.presupuesto = 250320.43;
+        
+        // Se presenta valores en pantalla
+        System.out.printf("%s - %d - %.1f\n", hospital2.nombre,
+                hospital2.numeroCamas, hospital2.presupuesto);
     }
 }
